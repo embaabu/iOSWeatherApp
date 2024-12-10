@@ -1,0 +1,15 @@
+{
+  "originHash" : "955b0c0a4aeb2a9a9b04ab0eb792983475dcf254582899859b2d94479b918750",
+  "pins" : [
+    {
+      "identity" : "networkpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/embaabu/NetworkPackage",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f10edce57f4e1e39434ded9c514e3c27e2396ecb"
+      }
+    }
+  ],
+  "version" : 3
+}
