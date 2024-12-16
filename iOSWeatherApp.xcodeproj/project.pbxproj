@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C00F07852D07C52400342C19 /* NetworkPackage in Frameworks */ = {isa = PBXBuildFile; productRef = C00F07842D07C52400342C19 /* NetworkPackage */; };
+		C04E587C2D0CC26B009B60BC /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C04E587B2D0CC26B009B60BC /* BottomSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00F07852D07C52400342C19 /* NetworkPackage in Frameworks */,
+				C04E587C2D0CC26B009B60BC /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +120,7 @@
 			name = iOSWeatherApp;
 			packageProductDependencies = (
 				C00F07842D07C52400342C19 /* NetworkPackage */,
+				C04E587B2D0CC26B009B60BC /* BottomSheet */,
 			);
 			productName = iOSWeatherApp;
 			productReference = C00F07562D07C26A00342C19 /* iOSWeatherApp.app */;
@@ -203,6 +206,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C00F07832D07C52400342C19 /* XCRemoteSwiftPackageReference "NetworkPackage" */,
+				C04E587A2D0CC26B009B60BC /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C00F07572D07C26A00342C19 /* Products */;
@@ -575,6 +579,14 @@
 				kind = branch;
 			};
 		};
+		C04E587A2D0CC26B009B60BC /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -582,6 +594,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C00F07832D07C52400342C19 /* XCRemoteSwiftPackageReference "NetworkPackage" */;
 			productName = NetworkPackage;
+		};
+		C04E587B2D0CC26B009B60BC /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C04E587A2D0CC26B009B60BC /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
