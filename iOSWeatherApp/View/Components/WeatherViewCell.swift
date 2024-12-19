@@ -46,7 +46,7 @@ struct WeatherCellView: View {
                 
                 VStack(alignment: .trailing, spacing: 0) {
                     // MARK: Forecast Large Icon
-                    Image(forecast.weather.first?.icon ?? "default")
+                    Image(forecast.weather.first?.iconName ?? "default")
                         .padding(.trailing, 4)
                     
                     // MARK: Weather

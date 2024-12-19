@@ -47,8 +47,8 @@ class WeatherViewModel:  ObservableObject{
         print("api key is\(apiKey)")
         let url = "https://api.openweathermap.org/data/2.5/forecast"
         let queryParams = [
-            "lat": "\(latitude)",// change this to the lat
-            "lon": "\(longitude)", // change this to the lon
+            "lat": "\(latitude)",
+            "lon": "\(longitude)",
             "units": "metric",
             "appid": "\(apiKey)"
         ]
@@ -117,11 +117,19 @@ class WeatherViewModel:  ObservableObject{
         }
 
         groupForecastByDay = groupedData
+        
+        let sortedKeys = groupedData.keys.sorted()
+
+        if let firstKey = sortedKeys.first, let firstForecasts = groupedData[firstKey] {
+            print("First Grouped Forecast for \(firstKey): \(firstForecasts)")
+        }
+
+        
 
         // Update groupedForecast for the view
 //        groupedForecastByDay = Array(groupedData.values)
 
-        print("Grouped Data: \(groupedData)")
+//        print("Grouped Data: \(String(describing: groupedData.first))")
     }
     
     private func extractDailyForecast(){
@@ -134,7 +142,7 @@ class WeatherViewModel:  ObservableObject{
         }
         dailyForecast = dailyData
         dailyForecastList = Array(dailyData.values)
-        print("***Daily Forecast: \(dailyForecast)")
+//        print("***Daily Forecast: \(dailyForecast)")
     }
     
     func dailyHighLow(for date: String) -> (high: Double, low: Double) {

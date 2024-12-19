@@ -80,10 +80,10 @@ struct HomeView: View {
                 
                 // MARK: Bottom Sheet
                 BottomSheetView(position: $bottomSheetPosition) {
-//                    ForecastView()
+                    ForecastView()
   
                 }content: {
-                    ForecastView()
+//                    ForecastView()
                     
                 }
 //

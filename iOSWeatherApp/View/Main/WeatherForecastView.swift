@@ -39,7 +39,7 @@ struct WeatherForecastView: View {
                     }
                 }
             }
-            .navigationTitle(locationManager.locationName ?? "Unknown Location")
+            .navigationTitle("Weather Forecast")
             .onAppear {
                 viewModel.bindLocationManager(locationManager)
                 fetchWeather()
